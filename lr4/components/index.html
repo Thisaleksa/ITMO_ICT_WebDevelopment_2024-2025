@@ -1,0 +1,1168 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.38">
+    
+    
+      
+        <title>Components - Web-Prog - Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Web-Prog - Docs" class="md-header__button md-logo" aria-label="Web-Prog - Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web-Prog - Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Components
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Web-Prog - Docs" class="md-nav__button md-logo" aria-label="Web-Prog - Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Web-Prog - Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Главная
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr1/main-lr1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr2/main-lr2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr3/main-lr3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-lr4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Компоненты для аккаунта пользователя.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Компоненты для аккаунта пользователя.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модальное окно для изменения данных
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Таблица сохраненных тренировок
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Карточка тренировки в таблице
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Кольцо прогресс-трекера
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Компоненты для блога.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Компоненты для блога.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Страница поста
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Карточка поста в блоге
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Components</h1>
+
+<h2 id="_1">Компоненты для аккаунта пользователя.</h2>
+<h3 id="_2">Модальное окно для изменения данных</h3>
+<p>Когда пользователь заходит в личный кабинет, то одна из компонент - таблица с данными профиля. При первом входе в аккаунт она пустая, при нажатии кнопки edit profile - всплывающее окно для заполнения данных.
+<img alt="Модальное" src="../images/4-4.png" /></p>
+<pre><code class="language-html">template&gt;
+   &lt;div
+     class=&quot;modal fade&quot;
+     id=&quot;editProfileModal&quot;
+     aria-labelledby=&quot;editProfileModalLabel&quot;
+     aria-hidden=&quot;true&quot;
+   &gt;
+     &lt;div class=&quot;modal-dialog&quot;&gt;
+       &lt;div class=&quot;modal-content&quot;&gt;
+         &lt;div class=&quot;modal-header&quot;&gt;
+           &lt;h5 class=&quot;modal-title&quot; id=&quot;editProfileModalLabel&quot;&gt;Edit Profile&lt;/h5&gt;
+           &lt;button
+             type=&quot;button&quot;
+             class=&quot;btn-close&quot;
+             data-bs-dismiss=&quot;modal&quot;
+             aria-label=&quot;Close modal window&quot;
+           &gt;&lt;/button&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;modal-body&quot;&gt;
+           &lt;form id=&quot;editProfileForm&quot;&gt;
+             &lt;div class=&quot;mb-3&quot;&gt;
+               &lt;label for=&quot;userAge&quot; class=&quot;form-label&quot;&gt;Age&lt;/label&gt;
+               &lt;input
+                 type=&quot;number&quot;
+                 class=&quot;form-control&quot;
+                 v-model=&quot;profile.age&quot;
+                 id=&quot;userAge&quot;
+                 required
+               /&gt;
+             &lt;/div&gt;
+             &lt;div class=&quot;mb-3&quot;&gt;
+               &lt;label for=&quot;userHeight&quot; class=&quot;form-label&quot;&gt;Height&lt;/label&gt;
+               &lt;input
+                 type=&quot;number&quot;
+                 step=&quot;0.1&quot;
+                 class=&quot;form-control&quot;
+                 v-model=&quot;profile.height&quot;
+                 id=&quot;userHeight&quot;
+                 required
+               /&gt;
+             &lt;/div&gt;
+             &lt;div class=&quot;mb-3&quot;&gt;
+               &lt;label for=&quot;userWeight&quot; class=&quot;form-label&quot;&gt;Weight&lt;/label&gt;
+               &lt;input
+                 type=&quot;number&quot;
+                 step=&quot;0.1&quot;
+                 class=&quot;form-control&quot;
+                 v-model=&quot;profile.weight&quot;
+                 id=&quot;userWeight&quot;
+                 required
+               /&gt;
+             &lt;/div&gt;
+             &lt;div class=&quot;mb-3&quot;&gt;
+               &lt;label for=&quot;fitnessLevelEdit&quot; class=&quot;form-label&quot;&gt;Fitness Level&lt;/label&gt;
+               &lt;select
+                 class=&quot;form-control&quot;
+                 v-model=&quot;profile.fitness_level&quot;
+                 id=&quot;fitnessLevelEdit&quot;
+               &gt;
+                 &lt;option value=&quot;beginner&quot;&gt;Beginner&lt;/option&gt;
+                 &lt;option value=&quot;intermediate&quot;&gt;Intermediate&lt;/option&gt;
+                 &lt;option value=&quot;advanced&quot;&gt;Advanced&lt;/option&gt;
+               &lt;/select&gt;
+             &lt;/div&gt;
+             &lt;div class=&quot;mb-3&quot;&gt;
+               &lt;label for=&quot;userGoals&quot; class=&quot;form-label&quot;&gt;Goals&lt;/label&gt;
+               &lt;select class=&quot;form-control&quot; v-model=&quot;profile.goals&quot; id=&quot;userGoals&quot;&gt;
+                 &lt;option&gt;Lose weight&lt;/option&gt;
+                 &lt;option&gt;Gain weight&lt;/option&gt;
+                 &lt;option&gt;Improve endurance&lt;/option&gt;
+                 &lt;option&gt;Build muscle&lt;/option&gt;
+                 &lt;option&gt;Increase flexibility&lt;/option&gt;
+               &lt;/select&gt;
+             &lt;/div&gt;
+             &lt;div class=&quot;mb-3&quot;&gt;
+               &lt;label for=&quot;userProgress&quot; class=&quot;form-label&quot;&gt;Progress&lt;/label&gt;
+               &lt;input
+                 type=&quot;text&quot;
+                 class=&quot;form-control&quot;
+                 v-model=&quot;profile.progress&quot;
+                 id=&quot;userProgress&quot;
+                 required
+               /&gt;
+             &lt;/div&gt;
+             &lt;div
+               v-if=&quot;errorMessage&quot;
+               class=&quot;alert alert-danger mt-3&quot;
+               role=&quot;alert&quot;
+             &gt;
+               {{ errorMessage }}
+             &lt;/div&gt;
+             &lt;div
+               v-if=&quot;successMessage&quot;
+               class=&quot;alert alert-success mt-3&quot;
+               role=&quot;alert&quot;
+             &gt;
+               {{ successMessage }}
+             &lt;/div&gt;
+           &lt;/form&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;modal-footer&quot;&gt;
+           &lt;button
+             type=&quot;button&quot;
+             class=&quot;btn btn-secondary&quot;
+             data-bs-dismiss=&quot;modal&quot;
+           &gt;
+             Close
+           &lt;/button&gt;
+           &lt;button
+             type=&quot;button&quot;
+             class=&quot;btn btn-primary&quot;
+             @click=&quot;handleSaveClick&quot;
+           &gt;
+             Save Changes
+           &lt;/button&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+
+ &lt;script&gt;
+ import { Modal } from &quot;bootstrap&quot;;
+ export default {
+   props: {
+     userId: {
+       type: Number,
+       required: true,
+     },
+   },
+   data() {
+     return {
+       profile: {
+         age: null,
+         height: null,
+         weight: null,
+         fitness_level: &quot;beginner&quot;,
+         goals: &quot;Lose weight&quot;,
+         progress: &quot;&quot;,
+       },
+       errorMessage: &quot;&quot;,
+       successMessage: &quot;&quot;,
+     };
+   },
+   mounted() {
+     this.loadProfile();
+     this.initModal();
+   },
+   methods: {
+     initModal() {
+       const modalElement = document.getElementById(&quot;editProfileModal&quot;);
+       const bootstrapModal = Modal.getOrCreateInstance(modalElement);
+       modalElement.addEventListener(&quot;hidden.bs.modal&quot;, () =&gt; {
+         this.errorMessage = &quot;&quot;;
+         this.successMessage = &quot;&quot;;
+       });
+     },
+     async loadProfile() {
+       try {
+         const response = await fetch(&quot;http://127.0.0.1:8000/app/profiles/&quot;);
+         if (!response.ok) throw new Error(`Error ${response.status}`);
+         const profiles = await response.json();
+         const user = profiles.find((p) =&gt; p.user === this.userId);
+         if (user) this.profile = { ...user };
+       } catch (error) {
+         console.error(&quot;Error loading profile:&quot;, error);
+       }
+     },
+     async handleSaveClick() {
+       console.log(&quot;Save Changes button clicked&quot;);
+       const endpoint = this.profile.id
+         ? `http://127.0.0.1:8000/app/profiles/${this.profile.id}/update/`
+         : &quot;http://127.0.0.1:8000/app/profiles/create/&quot;;
+       const method = this.profile.id ? &quot;PATCH&quot; : &quot;POST&quot;;
+       // Преобразование значений в числа с плавающей точкой
+       const requestData = {
+         age: this.profile.age,
+         height: this.profile.height ? parseFloat(this.profile.height).toFixed(2) : null,
+         weight: this.profile.weight ? parseFloat(this.profile.weight).toFixed(2) : null,
+         fitness_level: this.profile.fitness_level.toLowerCase(),
+         goals: this.profile.goals,
+         progress: this.profile.progress,
+       };
+       console.log(&quot;Sending data:&quot;, requestData);
+       try {
+         const response = await fetch(endpoint, {
+           method,
+           headers: { &quot;Content-Type&quot;: &quot;application/json&quot; },
+           body: JSON.stringify(requestData),
+         });
+         if (!response.ok) throw new Error(`Error ${response.status}`);
+         this.successMessage = this.profile.id
+           ? &quot;Profile updated!&quot;
+           : &quot;Profile created!&quot;;
+         setTimeout(() =&gt; (this.successMessage = &quot;&quot;), 3000);
+         this.closeModal();
+       } catch (error) {
+         this.errorMessage = &quot;Failed to save changes.&quot;;
+         console.error(&quot;Error saving profile:&quot;, error);
+       }
+     },
+     closeModal() {
+       const modalElement = document.getElementById(&quot;editProfileModal&quot;);
+       const bootstrapModal = Modal.getOrCreateInstance(modalElement);
+       bootstrapModal.hide();
+       const backdrop = document.querySelector(&quot;.modal-backdrop&quot;);
+       if (backdrop) {
+       backdrop.remove();
+   }
+       document.body.style.overflow = &quot;&quot;;
+     },
+   },
+ };
+ &lt;/script&gt;
+</code></pre>
+<h3 id="_3">Таблица сохраненных тренировок</h3>
+<p>Пользователь может сохранять тренировки на странице с тренировками. После нажатия кнопки save workout появляется всплывающее уведомление:
+<img alt="Сохранение" src="../images/4-5.png" />
+Таблица с сохраненными тренировками выглядит так после сохранений:
+<img alt="Таблица" src="../images/4-6.png" />
+Также у нас есть кнопка start напротив каждой сохраненной тренировки. Если мы нажмем на нее, то появится уведомление о том, что тренировка будет отмечена завершенной. 
+<img alt="Таблица" src="../images/4-7.png" />
+После нажатия кнопки OK, переход на страницу с тренировкой:
+<img alt="Тренировка" src="../images/4-8.png" /></p>
+<pre><code class="language-html">&lt;template&gt;
+   &lt;div&gt;
+     &lt;ProgressTracker
+       :totalWorkouts=&quot;workouts.length&quot;
+       :workoutsCompleted=&quot;workouts.filter(workout =&gt; workout.isCompleted).length&quot;
+     /&gt;
+
+     &lt;div class=&quot;card&quot; aria-labelledby=&quot;workoutSchedule&quot;&gt;
+       &lt;div class=&quot;card-body&quot;&gt;
+         &lt;h2 class=&quot;card-workout-title&quot; id=&quot;workoutSchedule&quot;&gt;Your Saved Workouts&lt;/h2&gt;
+         &lt;table class=&quot;table&quot;&gt;
+           &lt;thead&gt;
+             &lt;tr&gt;
+               &lt;th scope=&quot;col&quot;&gt;Workout Name&lt;/th&gt;
+               &lt;th scope=&quot;col&quot;&gt;Type&lt;/th&gt;
+               &lt;th scope=&quot;col&quot;&gt;Duration&lt;/th&gt;
+               &lt;th scope=&quot;col&quot;&gt;Is Completed&lt;/th&gt;
+               &lt;th scope=&quot;col&quot;&gt;Actions&lt;/th&gt;
+             &lt;/tr&gt;
+           &lt;/thead&gt;
+           &lt;tbody&gt;
+             &lt;tr v-if=&quot;workouts.length === 0&quot;&gt;
+               &lt;td colspan=&quot;5&quot; class=&quot;text-center&quot;&gt;No saved workouts yet&lt;/td&gt;
+             &lt;/tr&gt;
+             &lt;tr v-for=&quot;workout in workouts&quot; :key=&quot;workout.id&quot;&gt;
+               &lt;td&gt;{{ workout.title }}&lt;/td&gt;
+               &lt;td&gt;{{ workout.type }}&lt;/td&gt;
+               &lt;td&gt;{{ workout.duration }}&lt;/td&gt;
+               &lt;td&gt;{{ workout.isCompleted ? 'Yes' : 'No' }}&lt;/td&gt;
+               &lt;td&gt;
+                 &lt;button class=&quot;btn btn-primary btn-sm&quot; @click=&quot;handleStartWorkout(workout)&quot;&gt;
+                   Start Workout
+                 &lt;/button&gt;
+                 &lt;button class=&quot;btn btn-danger btn-sm&quot; @click=&quot;deleteWorkout(workout.id)&quot;&gt;
+                   Delete
+                 &lt;/button&gt;
+               &lt;/td&gt;
+             &lt;/tr&gt;
+           &lt;/tbody&gt;
+         &lt;/table&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+
+ &lt;script&gt;
+ import ProgressTracker from './ProgressTracker.vue';
+ export default {
+   name: &quot;SavedWorkouts&quot;,
+   components: { ProgressTracker },
+   props: {
+     userId: {
+       type: Number,
+       required: true,
+     },
+   },
+   data() {
+     return {
+       workouts: [],
+     };
+   },
+   methods: {
+     async fetchSavedWorkouts() {
+       try {
+         const workoutPlansResponse = await fetch(&quot;http://127.0.0.1:8000/app/workout-plans/&quot;);
+         const workoutPlans = await workoutPlansResponse.json();
+         const userWorkoutPlans = workoutPlans.filter((plan) =&gt; plan.user === this.userId);
+         const workoutsResponse = await fetch(&quot;http://127.0.0.1:8000/app/workouts/&quot;);
+         const allWorkouts = await workoutsResponse.json();
+         const userWorkouts = allWorkouts.filter((workout) =&gt;
+           userWorkoutPlans.some((plan) =&gt; plan.workout === workout.id)
+         );
+         const savedWorkouts = JSON.parse(localStorage.getItem(&quot;savedWorkouts&quot;)) || [];
+         this.workouts = userWorkouts.map((workout) =&gt; {
+           const savedWorkout = savedWorkouts.find((w) =&gt; w.id === workout.id);
+           return {
+             id: workout.id,
+             title: workout.title,
+             type: workout.type,
+             duration: workout.duration,
+             isCompleted: savedWorkout ? savedWorkout.isCompleted : false,
+           };
+         });
+         localStorage.setItem(&quot;savedWorkouts&quot;, JSON.stringify(this.workouts));
+       } catch (error) {
+         console.error(&quot;Error fetching saved workouts:&quot;, error);
+       }
+     },
+     handleStartWorkout(workout) {
+       const confirmation = window.confirm('This workout will be marked as completed. Do you want to proceed?');
+       if (confirmation) {
+         // Обновляем состояние тренировки
+         this.workouts = this.workouts.map((w) =&gt;
+           w.id === workout.id ? { ...w, isCompleted: true } : w
+         );
+         const updatedWorkouts = JSON.parse(localStorage.getItem(&quot;savedWorkouts&quot;)) || [];
+         const syncedWorkouts = updatedWorkouts.map((w) =&gt;
+           w.id === workout.id ? { ...w, isCompleted: true } : w
+         );
+         localStorage.setItem(&quot;savedWorkouts&quot;, JSON.stringify(syncedWorkouts));
+         // Сохраняем текущую тренировку и переходим на страницу тренировки
+         localStorage.setItem(&quot;currentWorkout&quot;, JSON.stringify(workout));
+         this.$router.push({ name: &quot;Workout&quot; });
+       }
+     },
+     deleteWorkout(workoutId) {
+       this.workouts = this.workouts.filter((workout) =&gt; workout.id !== workoutId);
+       const updatedWorkouts = JSON.parse(localStorage.getItem(&quot;savedWorkouts&quot;)) || [];
+       const filteredWorkouts = updatedWorkouts.filter((w) =&gt; w.id !== workoutId);
+       localStorage.setItem(&quot;savedWorkouts&quot;, JSON.stringify(filteredWorkouts));
+     },
+   },
+   mounted() {
+     this.fetchSavedWorkouts();
+   },
+ };
+ &lt;/script&gt;
+</code></pre>
+<h3 id="_4">Карточка тренировки в таблице</h3>
+<p>Код для тренировки в таблице с полями название, тип, продолжительность, завершена ли:</p>
+<pre><code class="language-html">&lt;template&gt;
+   &lt;tr&gt;
+     &lt;td&gt;{{ workout.title }}&lt;/td&gt;
+     &lt;td&gt;{{ workout.type }}&lt;/td&gt;
+     &lt;td&gt;{{ workout.duration }}&lt;/td&gt;
+     &lt;td&gt;{{ workout.isCompleted ? &quot;Yes&quot; : &quot;No&quot; }}&lt;/td&gt;
+     &lt;td class=&quot;button-container&quot;&gt;
+       &lt;button @click=&quot;startWorkout&quot; class=&quot;btn btn-warning&quot;&gt;Start Workout&lt;/button&gt;
+       &lt;button @click=&quot;$emit('delete', workout.id)&quot; class=&quot;btn btn-danger&quot;&gt;Delete&lt;/button&gt;
+     &lt;/td&gt;
+   &lt;/tr&gt;
+ &lt;/template&gt;
+
+ &lt;script&gt;
+ export default {
+   name: &quot;WorkoutCard&quot;,
+   props: {
+     workout: Object,
+   },
+   methods: {
+     startWorkout() {
+       const confirmed = window.confirm(&quot;This workout will be marked as completed.&quot;);
+       if (confirmed) {
+         this.$emit(&quot;start&quot;, this.workout);
+       }
+     },
+   },
+ };
+ &lt;/script&gt;
+
+ &lt;style scoped&gt;
+ .button-container {
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+ }
+ .btn {
+   width: 60%;
+ }
+ &lt;/style&gt;
+</code></pre>
+<h3 id="-">Кольцо прогресс-трекера</h3>
+<p>Кольцо считает за сто процентов количество всех сохраненных тренировок, за выполненные тренировки те, у которых статус Is Completed - ‘Yes’. Когда пользователь нажимает start workout, он переходит на страницу тренировки. когда он возвращается в личный кабинет, то статус меняется на Yes и счетчик кольца увеличивается. </p>
+<pre><code class="language-html"> &lt;template&gt;
+   &lt;div class=&quot;card us_progress&quot; aria-labelledby=&quot;progressTracking&quot;&gt;
+     &lt;div class=&quot;card-body&quot;&gt;
+       &lt;h2 class=&quot;card-title&quot; id=&quot;progressTracking&quot;&gt;Progress Tracking&lt;/h2&gt;
+       &lt;div class=&quot;d-flex justify-content-center&quot;&gt;
+         &lt;div class=&quot;circle-progress&quot; aria-labelledby=&quot;workoutsCompleted&quot;&gt;
+           &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+             &lt;circle class=&quot;bg-circle&quot; cx=&quot;18&quot; cy=&quot;18&quot; r=&quot;16&quot; fill=&quot;none&quot; stroke-width=&quot;3&quot;&gt;&lt;/circle&gt;
+             &lt;circle
+               class=&quot;main-circle-workouts&quot;
+               cx=&quot;18&quot; cy=&quot;18&quot; r=&quot;16&quot; fill=&quot;none&quot; stroke-width=&quot;3&quot;
+               :stroke-dasharray=&quot;workoutsProgress + ', 100'&quot;
+             &gt;&lt;/circle&gt;
+             &lt;text x=&quot;50%&quot; y=&quot;50%&quot; class=&quot;progress-text&quot; text-anchor=&quot;middle&quot; dy=&quot;.3em&quot;&gt;
+               {{ workoutsCompleted }}/{{ totalWorkouts }}
+             &lt;/text&gt;
+           &lt;/svg&gt;
+           &lt;p id=&quot;workoutsCompleted&quot;&gt;Workouts Completed&lt;/p&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+
+ &lt;script&gt;
+ export default {
+   name: &quot;ProgressTracker&quot;,
+   props: {
+     totalWorkouts: {
+       type: Number,
+       required: true,
+     },
+     workoutsCompleted: {
+       type: Number,
+       required: true,
+     },
+   },
+   computed: {
+     workoutsProgress() {
+       return this.totalWorkouts &gt; 0
+         ? (this.workoutsCompleted / this.totalWorkouts) * 100
+         : 0;
+     },
+   },
+ };
+ &lt;/script&gt;
+</code></pre>
+<h2 id="_5">Компоненты для блога.</h2>
+<h3 id="_6">Страница поста</h3>
+<p>При нажатии в карточке поста на кнопку read more открывается страница поста. Это большая карточка с картинкой, заголовком и содержанием. 
+<img alt="Таблица" src="../images/4-9.png" /></p>
+<pre><code class="language-html">&lt;template&gt;
+   &lt;div class=&quot;post-container&quot;&gt;
+     &lt;!-- Кнопка возврата на блог --&gt;
+     &lt;div class=&quot;back-btn-container&quot;&gt;
+       &lt;router-link to=&quot;/blog&quot; class=&quot;btn btn-primary&quot;&gt;
+         Back to Blog Search
+       &lt;/router-link&gt;
+     &lt;/div&gt;
+
+     &lt;div class=&quot;post-card&quot;&gt;
+       &lt;h1 class=&quot;post-title&quot;&gt;{{ post.title }}&lt;/h1&gt;
+
+       &lt;img :src=&quot;post.image&quot; alt=&quot;Post Image&quot; class=&quot;post-image&quot; /&gt;
+
+       &lt;div class=&quot;post-content&quot; v-html=&quot;formattedContent&quot;&gt;&lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+
+ &lt;script&gt;
+ export default {
+   name: 'Post',
+   data() {
+     return {
+       post: {
+         title: 'The Benefits of Staying Hydrated',
+         image: '/public/hydro.jpg',
+         content: `
+           &lt;p&gt;Staying hydrated is crucial for maintaining optimal health and well-being. Water is essential for various bodily functions, from regulating body temperature to supporting metabolism and nutrient absorption. Despite its importance, many people overlook the need for proper hydration. In this article, we will explore the numerous benefits of staying hydrated and why it's essential to drink enough water each day.&lt;/p&gt;
+           &lt;h2&gt;1. Maintains Fluid Balance&lt;/h2&gt;
+           &lt;p&gt;Water plays a key role in maintaining fluid balance within the body. It helps transport nutrients to cells, remove waste products, and regulate body temperature. The human body is composed of approximately 60% water, and this fluid is constantly being lost through sweat, urine, and respiration. Therefore, it’s essential to replenish water intake throughout the day to maintain proper fluid balance.&lt;/p&gt;
+           &lt;h2&gt;2. Supports Digestion&lt;/h2&gt;
+           &lt;p&gt;Proper hydration aids in the digestion process by facilitating the movement of food through the gastrointestinal tract. It helps break down food particles and enables the absorption of nutrients in the stomach and intestines. Without adequate water, your digestive system can become sluggish, leading to problems such as constipation and indigestion.&lt;/p&gt;
+           &lt;h2&gt;3. Boosts Energy Levels&lt;/h2&gt;
+           &lt;p&gt;Dehydration can cause fatigue, lethargy, and a decrease in cognitive function. Drinking enough water helps maintain energy levels by preventing the body from becoming sluggish. It also supports the brain’s function, improving concentration and memory, making you more productive throughout the day.&lt;/p&gt;
+           &lt;h2&gt;4. Enhances Skin Health&lt;/h2&gt;
+           &lt;p&gt;Staying hydrated is essential for healthy, glowing skin. Water helps flush out toxins and keeps skin cells nourished. Dehydration can lead to dry, flaky skin, as well as an increased risk of wrinkles and other skin issues. Drinking enough water helps maintain skin elasticity and can promote a healthy complexion.&lt;/p&gt;
+           &lt;h2&gt;5. Regulates Body Temperature&lt;/h2&gt;
+           &lt;p&gt;One of the most important functions of water is temperature regulation. Water helps to cool the body through sweating and evaporation, preventing overheating. This is particularly important during exercise or hot weather when the body is more prone to dehydration.&lt;/p&gt;
+           &lt;h2&gt;6. Improves Physical Performance&lt;/h2&gt;
+           &lt;p&gt;When exercising, staying hydrated is essential to maintain physical performance. Water helps regulate muscle function, improve endurance, and prevent cramps. Dehydration can lead to decreased strength, coordination, and stamina, making it difficult to achieve your fitness goals.&lt;/p&gt;
+           &lt;h2&gt;7. Promotes Kidney Health&lt;/h2&gt;
+           &lt;p&gt;The kidneys play a vital role in filtering toxins from the blood and producing urine. Adequate hydration ensures that the kidneys can function properly, reducing the risk of kidney stones and urinary tract infections (UTIs). Dehydration can cause kidney damage over time, as the kidneys must work harder to filter waste products without enough fluid.&lt;/p&gt;
+           &lt;p&gt;&lt;strong&gt;Conclusion:&lt;/strong&gt;&lt;/p&gt;
+           &lt;p&gt;Hydration is key to overall health and well-being. From supporting bodily functions to improving skin health, digestion, and mental clarity, the benefits of drinking enough water are vast. Aim to drink at least 8 cups (about 2 liters) of water daily, or more if you are active or live in a hot climate. Your body will thank you for it, and you'll feel better, both physically and mentally, as a result. So, drink up and stay hydrated!&lt;/p&gt;
+         `
+       },
+     };
+   },
+   computed: {
+     formattedContent() {
+       return this.post.content;
+     }
+   }
+ };
+ &lt;/script&gt;
+
+ &lt;style scoped&gt;
+ :root {
+   --background-color: #fbeaff;
+   --text-color: #333;
+   --card-background: #fff;
+   --heading-color: #6a0dad;
+   --button-background: #ff85c0;
+   --button-border: #ff85c0;
+ }
+ .post-container {
+   padding: 20px;
+   max-width: 1400px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .back-btn-container {
+   margin-bottom: 20px;
+ }
+ .post-card {
+   background-color: var(--card-background);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   padding: 20px;
+   max-width: 1000px;
+   margin: 20px 0;
+   text-align: center;
+   font-family: Arial, sans-serif;
+ }
+ .post-title {
+   color: var(--heading-color);
+   font-size: 2rem;
+   margin-bottom: 15px;
+   font-weight: bold;
+ }
+ .post-image {
+   width: 100%;
+   height: 600px;
+   object-fit: cover;
+   margin-bottom: 20px;
+   border-radius: 8px;
+ }
+ .post-content {
+   font-size: 1.1rem;
+   line-height: 1.6;
+   color: var(--text-color);
+   padding: 0 10px;
+   text-align: justify;
+   margin-top: 20px;
+ }
+ .post-content h2 {
+   color: var(--heading-color);
+   font-size: 1.5rem;
+   margin-top: 15px;
+   font-weight: bold;
+ }
+ h2 {
+   color: var(--heading-color);
+   font-size: 1.5rem;
+   margin-top: 15px;
+   font-weight: bold;
+ }
+ p {
+   margin-bottom: 15px;
+ }
+ .btn-primary {
+   background-color: var(--button-background);
+   border-color: var(--button-border);
+   color: var(--text-color);
+   padding: 10px 20px;
+   text-align: center;
+   font-size: 1.1rem;
+   display: inline-block;
+   margin: 20px 0;
+   text-decoration: none;
+ }
+ .btn-primary:hover {
+   background-color: var(--button-border);
+ }
+ @media (max-width: 768px) {
+   .post-title {
+     font-size: 1.8rem;
+   }
+   .post-content {
+     font-size: 1rem;
+   }
+ }
+ &lt;/style&gt;
+</code></pre>
+<h3 id="_7">Карточка поста в блоге</h3>
+<p>В карточке поста будем хранить заголовок, содержание и дату публикации для фильтрации.</p>
+<pre><code class="language-html"> &lt;template&gt;
+   &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+     &lt;div class=&quot;card-article card h-100&quot;&gt;
+       &lt;img
+         v-if=&quot;post.image&quot;
+         :src=&quot;getImageUrl(post.id)&quot;
+         class=&quot;card-img-top&quot;
+         :alt=&quot;post.title&quot;
+         :aria-label=&quot;`Image for ${post.title}`&quot;
+         @error=&quot;onImageError&quot;
+       /&gt;
+       &lt;div class=&quot;card-body&quot;&gt;
+         &lt;h2 class=&quot;card-title&quot;&gt;{{ post.title }}&lt;/h2&gt;
+         &lt;p class=&quot;card-text&quot;&gt;
+           {{ truncatedContent }}
+         &lt;/p&gt;
+         &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; @click.prevent=&quot;onReadMore&quot;&gt;
+           Read More
+         &lt;/a&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;card-footer text-muted&quot;&gt;
+         Published: {{ formattedDate }}
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+
+ &lt;script&gt;
+ export default {
+   name: &quot;BlogCard&quot;,
+   props: {
+     post: {
+       type: Object,
+       required: true,
+     },
+   },
+   computed: {
+     formattedDate() {
+       const options = { year: &quot;numeric&quot;, month: &quot;long&quot;, day: &quot;numeric&quot; };
+       return new Date(this.post.created_at).toLocaleDateString(&quot;ru-RU&quot;, options);
+     },
+     truncatedContent() {
+       return this.post.content.length &gt; 100
+         ? this.post.content.substring(0, 100) + &quot;...&quot;
+         : this.post.content;
+     },
+   },
+   methods: {
+     onReadMore() {
+       this.$emit(&quot;readMore&quot;, this.post.id);
+     },
+     async getImageUrl(postId) {
+       try {
+         const image = await import(`@/assets/${postId}.jpg`);
+         return image.default || require('@/assets/3.jpg');
+       } catch (error) {
+         console.error(`Image not found for post ${postId}, using fallback.`);
+         return require('@/assets/3.jpg');
+       }
+     },
+     onImageError(event) {
+       event.target.src = require(&quot;@/assets/3.jpg&quot;);
+     },
+   },
+ };
+ &lt;/script&gt;
+
+ &lt;style scoped&gt;
+ :root {
+   --background-color: #fbeaff;
+   --text-color: #333;
+   --card-background: #fff;
+   --heading-color: #6a0dad;
+   --button-background: #ff85c0;
+   --button-border: #ff85c0;
+   --modal-background: rgba(0, 0, 0, 0.5);
+ }
+ .card-article {
+   display: flex;
+   flex-direction: column;
+   background-color: var(--card-background);
+   border-radius: 15px;
+   margin-bottom: 20px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ .card-body {
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+ }
+ .card-footer {
+   background-color: var(--card-background);
+   border-top: 1px solid #ddd;
+   font-size: 0.9rem;
+ }
+ .btn-primary {
+   margin-top: auto;
+   background-color: var(--button-background);
+   border-color: var(--button-border);
+   color: var(--text-color);
+   width: 120px;
+   height: 40px;
+ }
+ h2.card-title {
+   color: var(--heading-color);
+ }
+ &lt;/style&gt;
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6f25eb3.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1600 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.38">
+    
+    
+      
+        <title>Interfaces - Web-Prog - Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Web-Prog - Docs" class="md-header__button md-logo" aria-label="Web-Prog - Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web-Prog - Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Interfaces
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Web-Prog - Docs" class="md-nav__button md-logo" aria-label="Web-Prog - Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Web-Prog - Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Главная
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr1/main-lr1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr2/main-lr2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr3/main-lr3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-lr4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Интерфейс 1. Регистрация
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Интерфейс 2. Авторизация
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Интерфейс 3. Личный кабинет
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Интерфейс 4. Страница тренировок
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Интерфейс 5. Страница блога
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Interfaces</h1>
+
+<h2 id="1">Интерфейс 1. Регистрация</h2>
+<p>Создадим базовую страницу регистрации пользователя с полями <strong>имя, почта, пароль и подтверждение пароля</strong>. Если у пользователя уже есть аккаунт, то есть ссылка на страницу авторизации. С помощью Axios Instance и стейт-менеджера будем регистрировать пользователей через токены и хранить их в токен-хранилище. Сделаем оформление страницы с помощью <strong>boostrap</strong>:
+<img alt="Регистрация" src="../images/4-10.png" /></p>
+<pre><code class="language-html">&lt;script setup&gt;
+ import { ref } from &quot;vue&quot;;
+ import instance from &quot;@/AxiosInstance.js&quot;;
+ import router from &quot;@/router/index.js&quot;;
+ const form = ref({
+   email: &quot;&quot;,
+   username: &quot;&quot;,
+   password: &quot;&quot;,
+   re_password: &quot;&quot;,
+ });
+ function register() {
+   if (!form.value.email) {
+     alert(&quot;Поле email обязательно для заполнения.&quot;);
+     return;
+   }
+   if (!/\S+@\S+\.\S+/.test(form.value.email)) {
+     alert(&quot;Введите корректный email.&quot;);
+     return;
+   }
+   if (form.value.password !== form.value.re_password) {
+     alert(&quot;Пароли не совпадают&quot;);
+     return;
+   }
+   const formData = new FormData();
+   formData.append(&quot;email&quot;, form.value.email);
+   formData.append(&quot;username&quot;, form.value.username);
+   formData.append(&quot;password&quot;, form.value.password);
+   formData.append(&quot;re_password&quot;, form.value.re_password);
+   instance
+     .post(&quot;/auth/users/&quot;, formData)
+     .then((response) =&gt; {
+       if (response.status === 201) {
+         alert(&quot;Регистрация успешна! Теперь вы можете войти.&quot;);
+         router.push(&quot;/login&quot;);
+       }
+     })
+     .catch((error) =&gt; {
+       console.error(&quot;Ошибка регистрации:&quot;, error.response?.data || error);
+       const errorData = error.response?.data;
+       if (errorData) {
+         if (errorData.email) {
+           alert(`Ошибка в поле email: ${errorData.email.join(&quot;, &quot;)}`);
+         } else if (errorData.username) {
+           alert(`Ошибка в поле имя пользователя: ${errorData.username.join(&quot;, &quot;)}`);
+         } else if (errorData.password) {
+           alert(`Ошибка в поле пароль: ${errorData.password.join(&quot;, &quot;)}`);
+         } else {
+           alert(`Ошибка: ${errorData.detail || &quot;Не удалось зарегистрироваться.&quot;}`);
+         }
+       } else {
+         alert(&quot;Ошибка: Не удалось зарегистрироваться.&quot;);
+       }
+     });
+ }
+ &lt;/script&gt;
+ &lt;template&gt;
+   &lt;div class=&quot;d-flex justify-content-center align-items-center vh-100&quot;&gt;
+     &lt;div class=&quot;card registration-container shadow-sm&quot;&gt;
+       &lt;div class=&quot;logo text-center mb-4&quot;&gt;
+         &lt;img src=&quot;../pictures/logo.jpg&quot; alt=&quot;Fitness Platform Logo&quot; class=&quot;img-fluid&quot; width=&quot;150&quot; /&gt;
+       &lt;/div&gt;
+       &lt;h2 class=&quot;text-center text-primary&quot;&gt;Регистрация&lt;/h2&gt;
+       &lt;form @submit.prevent=&quot;register&quot;&gt;
+         &lt;div class=&quot;mb-3&quot;&gt;
+           &lt;label for=&quot;email&quot; class=&quot;form-label&quot;&gt;Email&lt;/label&gt;
+           &lt;input
+             type=&quot;email&quot;
+             class=&quot;form-control&quot;
+             id=&quot;email&quot;
+             placeholder=&quot;Введите email&quot;
+             v-model=&quot;form.email&quot;
+             required
+           /&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;mb-3&quot;&gt;
+           &lt;label for=&quot;username&quot; class=&quot;form-label&quot;&gt;Полное имя&lt;/label&gt;
+           &lt;input
+             type=&quot;text&quot;
+             class=&quot;form-control&quot;
+             id=&quot;username&quot;
+             placeholder=&quot;Введите полное имя&quot;
+             v-model=&quot;form.username&quot;
+             required
+           /&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;mb-3&quot;&gt;
+           &lt;label for=&quot;password&quot; class=&quot;form-label&quot;&gt;Пароль&lt;/label&gt;
+           &lt;input
+             type=&quot;password&quot;
+             class=&quot;form-control&quot;
+             id=&quot;password&quot;
+             placeholder=&quot;Введите пароль&quot;
+             v-model=&quot;form.password&quot;
+             required
+           /&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;mb-3&quot;&gt;
+           &lt;label for=&quot;re_password&quot; class=&quot;form-label&quot;&gt;Подтверждение пароля&lt;/label&gt;
+           &lt;input
+             type=&quot;password&quot;
+             class=&quot;form-control&quot;
+             id=&quot;re_password&quot;
+             placeholder=&quot;Повторите пароль&quot;
+             v-model=&quot;form.re_password&quot;
+             required
+           /&gt;
+         &lt;/div&gt;
+         &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary w-100&quot;&gt;Зарегистрироваться&lt;/button&gt;
+       &lt;/form&gt;
+       &lt;div class=&quot;text-center mt-3&quot;&gt;
+         &lt;a href=&quot;/login&quot; class=&quot;text-decoration-none&quot;&gt;Уже есть аккаунт? Войти&lt;/a&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+ &lt;style scoped&gt;
+ .registration-container {
+   width: 100%;
+   max-width: 400px;
+   padding: 20px;
+   background-color: var(--container-background);
+   border-radius: 15px;
+ }
+ .logo img {
+   width: 150px;
+ }
+ body {
+   background-color: var(--background-color);
+   color: var(--text-color);
+ }
+ :root {
+   --background-color: #fbeaff;
+   --text-color: #333;
+   --container-background: #fff;
+   --button-background: #ff85c0;
+   --button-border: #ff85c0;
+   --link-color: #ff2d55;
+ }
+ .btn-primary {
+   background-color: var(--button-background);
+   border-color: var(--button-border);
+   color: var(--text-color);
+ }
+ a {
+   color: var(--link-color);
+ }
+ a:hover {
+   text-decoration: underline;
+ }
+ &lt;/style&gt;
+</code></pre>
+<h2 id="2">Интерфейс 2. Авторизация</h2>
+<p>Авторизацию тоже сделаем в виде формы, но уже с двумя полями для заполнения - <strong>юзернейм и парол</strong>ь. Токен возьмем из хранилища токенов, после авторизации будем перенаправлять пользователя в личный кабинет. Оформим с помощью <strong>boostrap:</strong>
+<img alt="Авторизация" src="../images/4-11.png" />
+<img alt="ЛК" src="../images/4-12.png" /></p>
+<pre><code class="language-html">script setup&gt;
+ import { ref } from &quot;vue&quot;;
+ import instance from &quot;@/AxiosInstance.js&quot;;
+ import router from &quot;@/router/index.js&quot;;
+ import { TokenStore } from &quot;@/stores/TokenStore.js&quot;;
+ const Token = TokenStore();
+ const form = ref({
+   username: &quot;&quot;,
+   password: &quot;&quot;,
+ });
+ function login() {
+   instance
+     .post(&quot;/auth/token/login&quot;, form.value)
+     .then((response) =&gt; {
+       if (response.status === 200) {
+         Token.setToken(response.data.auth_token);
+         console.log(&quot;Токен после авторизации:&quot;, Token.token);
+         // Очищаем данные предыдущего пользователя
+         localStorage.removeItem(&quot;user_id&quot;);
+         localStorage.removeItem(&quot;username&quot;);
+         // Переходим в личный кабинет
+         router.push(&quot;/acc&quot;).then(() =&gt; {
+           console.log(&quot;Переход на личный кабинет завершен.&quot;);
+         });
+       }
+     })
+     .catch((error) =&gt; console.error(&quot;Ошибка авторизации:&quot;, error));
+ }
+ &lt;/script&gt;
+
+ &lt;template&gt;
+   &lt;div class=&quot;d-flex justify-content-center align-items-center vh-100&quot;&gt;
+     &lt;div class=&quot;card login-container shadow-sm&quot;&gt;
+       &lt;div class=&quot;logo&quot;&gt;
+         &lt;img src=&quot;../pictures/logo.jpg&quot; alt=&quot;Platform Logo&quot; /&gt;
+         &lt;h2 class=&quot;text-primary&quot;&gt;Вход&lt;/h2&gt;
+       &lt;/div&gt;
+
+       &lt;!-- Форма логина --&gt;
+       &lt;form @submit.prevent=&quot;login&quot;&gt;
+         &lt;div class=&quot;mb-3&quot;&gt;
+           &lt;label for=&quot;username&quot; class=&quot;form-label&quot;&gt;Логин&lt;/label&gt;
+           &lt;input
+             type=&quot;text&quot;
+             class=&quot;form-control&quot;
+             id=&quot;username&quot;
+             placeholder=&quot;Введите логин&quot;
+             v-model=&quot;form.username&quot;
+             required
+           /&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;mb-3&quot;&gt;
+           &lt;label for=&quot;password&quot; class=&quot;form-label&quot;&gt;Пароль&lt;/label&gt;
+           &lt;input
+             type=&quot;password&quot;
+             class=&quot;form-control&quot;
+             id=&quot;password&quot;
+             placeholder=&quot;Введите пароль&quot;
+             v-model=&quot;form.password&quot;
+             required
+           /&gt;
+         &lt;/div&gt;
+         &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary w-100&quot;&gt;Войти&lt;/button&gt;
+       &lt;/form&gt;
+
+       &lt;!-- Ссылки для восстановления и регистрации --&gt;
+       &lt;div class=&quot;text-center mt-3&quot;&gt;
+         &lt;a href=&quot;#&quot; class=&quot;text-decoration-none&quot;&gt;Забыли пароль?&lt;/a&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;text-center mt-2&quot;&gt;
+         &lt;a href=&quot;/register&quot; class=&quot;text-decoration-none&quot;&gt;Еще нет аккаунта? Регистрация&lt;/a&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+
+     &lt;!-- Переключатель темы --&gt;
+     &lt;div class=&quot;theme-switcher&quot; @click=&quot;toggleTheme&quot;&gt;
+       &lt;i class=&quot;bi bi-brightness-high&quot;&gt;&lt;/i&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+
+ &lt;style scoped&gt;
+ :root {
+     --background-color: #fbeaff;
+     --text-color: #333;
+     --container-background: #fff;
+     --input-background: #f3e5f5;
+     --button-background: #ff85c0;
+     --button-border: #ff85c0;
+     --link-color: #ff2d55;
+ }
+ .blue-theme {
+     --background-color: #e0f7fa;
+     --text-color: #333;
+     --container-background: #ffffff;
+     --input-background: #b2ebf2;
+     --button-background: #00acc1;
+     --button-border: #00acc1;
+     --link-color: #00796b;
+ }
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: var(--background-color);
+     color: var(--text-color);
+     margin: 0;
+     position: relative;
+ }
+ .login-container {
+     width: 100%;
+     max-width: 400px;
+     padding: 20px;
+     background: var(--container-background);
+     border-radius: 15px;
+ }
+ .logo {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ .logo img {
+     width: 150px;
+ }
+ .form-control {
+     background-color: var(--input-background);
+     color: var(--text-color);
+     border-radius: 10px;
+ }
+ .btn-primary {
+     background-color: var(--button-background);
+     border-color: var(--button-border);
+     color: var(--text-color);
+ }
+ a {
+     color: var(--link-color);
+     text-decoration: none;
+ }
+ a:hover {
+     text-decoration: underline;
+ }
+ .theme-switcher i {
+     font-size: 2rem;
+     color: #000;
+     transition: color 0.3s ease;
+ }
+ .theme-switcher {
+     position: fixed;
+     top: 10px;
+     left: 10px;
+     z-index: 1000;
+     cursor: pointer;
+ }
+ .theme-switcher:hover i {
+     color: #00796b;
+ }
+ &lt;/style&gt;
+</code></pre>
+<h2 id="3">Интерфейс 3. Личный кабинет</h2>
+<p>Личный кабинет пользователя будет разделен на несколько частей, оформленных в виде карточек: прогресс-трекер, сохраненные тренировки и данные профиля. Для интерфейса тоже будем использовать юзерайди и юзернейм для персонализации. Оформим части лк в компонентах, а в интерфейсе будем использовать их импорт и общее оформление:
+<img alt="Личный кабинет" src="../images/4-1.png" /></p>
+<pre><code class="language-html"> &lt;template&gt;
+   &lt;div class=&quot;container us_panel&quot;&gt;
+     &lt;header class=&quot;us_panel-header&quot;&gt;
+       &lt;h1 id=&quot;welcomeHeader&quot;&gt;Welcome, {{ username }}&lt;/h1&gt;
+       &lt;p id=&quot;userIntro&quot;&gt;Track your fitness progress and view your workout plans.&lt;/p&gt;
+     &lt;/header&gt;
+
+     &lt;!-- Тренировки --&gt;
+     &lt;SavedWorkouts v-if=&quot;userId&quot; :userId=&quot;userId&quot;/&gt;
+
+     &lt;!-- Профиль --&gt;
+     &lt;ProfileForm v-if=&quot;userId&quot; :userId=&quot;userId&quot; /&gt;
+
+     &lt;!-- Навигационные кнопки --&gt;
+     &lt;nav role=&quot;navigation&quot; aria-label=&quot;Main Navigation&quot;&gt;
+       &lt;div class=&quot;navigation-buttons&quot;&gt;
+         &lt;router-link to=&quot;/search&quot; class=&quot;nav-button&quot; aria-label=&quot;Go to workouts&quot;&gt;
+           Workouts
+         &lt;/router-link&gt;
+         &lt;router-link to=&quot;/blog&quot; class=&quot;nav-button&quot; aria-label=&quot;Go to Health &amp; Nutrition Blog&quot;&gt;
+           Food Blog
+         &lt;/router-link&gt;
+       &lt;/div&gt;
+     &lt;/nav&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+
+ &lt;script&gt;
+ import { onMounted, ref } from 'vue'
+ import ProgressTracker from '../components/Acc/ProgressTracker.vue'
+ import SavedWorkouts from '../components/Acc/SavedWorkouts.vue'
+ import ProfileForm from '../components/Acc/ProfileForm.vue'
+ import instance from '@/AxiosInstance.js';
+ import { TokenStore } from '@/stores/TokenStore.js';
+ import WorkoutSearch from &quot;@/views/WorkoutSearch.vue&quot;;
+ export default {
+   components: {
+     WorkoutSearch,
+     ProgressTracker,
+     SavedWorkouts,
+     ProfileForm
+   },
+   setup() {
+     const Token = TokenStore();
+     const userId = ref(parseInt(localStorage.getItem('user_id')) || null);
+     const username = ref(localStorage.getItem('username') || 'User');
+     onMounted(() =&gt; {
+       const token = Token.token;
+       if (token) {
+         // Проверяем, есть ли данные в localStorage
+         if (!localStorage.getItem('user_id') || !localStorage.getItem('username')) {
+           instance
+             .get(&quot;/auth/users/me/&quot;, {
+               headers: { Authorization: `Token ${token}` },
+             })
+             .then((response) =&gt; {
+               userId.value = response.data.id;
+               username.value = response.data.username;
+               localStorage.setItem('user_id', userId.value);
+               localStorage.setItem('username', username.value);
+             })
+             .catch((error) =&gt; {
+               console.error(&quot;Ошибка при получении данных о пользователе:&quot;, error);
+             });
+         } else {
+           userId.value = parseInt(localStorage.getItem('user_id'));
+           username.value = localStorage.getItem('username');
+         }
+       } else {
+         console.error(&quot;Токен отсутствует. Пожалуйста, выполните вход.&quot;);
+       }
+     });
+     return {
+       username,
+       userId
+     };
+   },
+ }
+ &lt;/script&gt;
+
+ &lt;style&gt;
+ :root {
+     --background-color: #fbeaff;
+     --text-color: #333;
+     --card-background: #fff;
+     --heading-color: #6a0dad;
+     --button-background: #ff85c0;
+     --button-border: #ff85c0;
+     --circle-bg: #e6e6e6;
+     --circle-main-weight: #ff99cc;
+     --circle-main-workouts: #cc66ff;
+     --circle-main-calories: #d1a3d6;
+     --circle-text-color: #8c2e9e;
+ }
+ /* Альтернативная голубая тема */
+ .blue-theme {
+     --background-color: #e0f7fa;
+     --text-color: #333;
+     --card-background: #ffffff;
+     --heading-color: #00796b;
+     --button-background: #00acc1;
+     --button-border: #00acc1;
+     --circle-bg: #b2ebf2;
+     --circle-main-workouts: #0097a7;
+     --circle-main-calories: #00796b;
+     --circle-text-color: #00796b;
+ }
+ body {
+     background-color: var(--background-color);
+     color: var(--text-color);
+     margin: 0;
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+ }
+ .us_panel {
+     padding: 20px;
+ }
+ .us_panel-header {
+     margin-bottom: 30px;
+     text-align: center;
+ }
+ .card {
+     width: 100%;
+     max-width: 900px;
+     margin: 5px auto;
+     background-color: var(--card-background);
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ .card-title, .card-workout-title, #profileInfo {
+     font-size: 1.5rem;
+     color: var(--heading-color);
+     font-weight: bold;
+ }
+ .us_progress {
+     margin-bottom: 30px;
+ }
+ .card-body {
+     padding: 30px;
+ }
+ .circle-progress {
+     width: 150px;
+     height: 150px;
+     position: relative;
+     display: inline-block;
+     margin: 20px;
+     text-align: center;
+ }
+ .circle-progress svg {
+     transform: rotate(-90deg);
+     width: 100%;
+     height: 100%;
+ }
+ .circle-progress text {
+     font-size: 10px;
+     font-weight: bold;
+     text-anchor: middle;
+     dominant-baseline: central;
+     fill: var(--circle-text-color);
+ }
+ .circle-progress .bg-circle {
+     stroke: var(--circle-bg);
+ }
+ .circle-progress .main-circle-weight {
+     stroke: var(--circle-main-weight);
+ }
+ .circle-progress .main-circle-workouts {
+     stroke: var(--circle-main-workouts);
+ }
+ .circle-progress .main-circle-calories {
+     stroke: var(--circle-main-calories);
+ }
+ .circle-progress-text {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: var(--circle-text-color);
+     font-size: 10px;
+     font-weight: bold;
+ }
+ .circle-progress-text p {
+     margin: 0;
+     font-size: 10px;
+ }
+ .btn-custom {
+     background-color: var(--button-background);
+     border: none;
+     color: white;
+     font-size: 14px;
+     padding: 5px 10px;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+ }
+ .btn-custom:hover {
+     background-color: #ff66b2;
+ }
+ .btn-primary {
+     background-color: var(--button-background);
+     border-color: var(--button-border);
+ }
+ .card-workout-title {
+     color: var(--heading-color);
+     font-weight: bold;
+ }
+ .list-group-item {
+     padding: 15px;
+     border: none;
+ }
+ .circle-progress p {
+     font-size: 14px;
+     color: var(--text-color);
+     margin-top: 14px;
+     word-wrap: break-word;
+ }
+ .navigation-buttons {
+     margin-top: 20px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .table th, .table td {
+     border-top: 1px solid #f5f5f5;
+     border-bottom: 1px solid #f5f5f5;
+ }
+ .table th {
+     background-color: #f0f0f0;
+     color: var(--circle-text-color);
+ }
+ .table td {
+     color: var(--text-color);
+ }
+ .table {
+     margin-top: 20px;
+ }
+ .icon-button {
+     font-size: 2rem;
+     padding: 15px;
+     border: none;
+     background: none;
+     cursor: pointer;
+     transition: transform 0.3s ease;
+     color: #333;
+ }
+ .icon-button:hover {
+     transform: scale(1.1);
+     color: #000;
+ }
+ .theme-switcher {
+     position: fixed;
+     top: 10px;
+     left: 10px;
+     z-index: 1000;
+     cursor: pointer;
+ }
+ .theme-switcher i {
+     font-size: 2rem;
+     color: #000;
+     transition: color 0.3s ease;
+ }
+ .theme-switcher:hover i {
+     color: #00796b;
+ }
+ &lt;/style&gt;
+</code></pre>
+<h2 id="4">Интерфейс 4. Страница тренировок</h2>
+<p>На странице с тренировками реализуем фильтрацию: будем фильтровать по трем параметрам (длительность, тип, уровень физической подготовки). Также добавим кнопку сброса фильтров для возврата к полному списку. Тренировки загружаем с сервера, в карточках тренировки две кнопки start workout (переход на страницу тренировки) и save to profile (сохранение тренировки в профиль). При сохранении в профиль появляется уведомление и оновляется таблица в профиле юзера.
+<img alt="Поиск тренировок" src="../images/4-2.png" /></p>
+<pre><code class="language-html">&lt;template&gt;
+   &lt;div class=&quot;search-workouts&quot;&gt;
+     &lt;div class=&quot;theme-switcher text-center mb-3&quot;&gt;
+       &lt;i
+         @click=&quot;toggleTheme&quot;
+         :class=&quot;['fas', theme === 'light' ? 'fa-sun' : 'fa-moon', 'icon-button']&quot;
+         aria-label=&quot;Switch Theme&quot;
+       &gt;&lt;/i&gt;
+     &lt;/div&gt;
+
+     &lt;h1 class=&quot;text-center mb-4 main_header&quot; id=&quot;mainHeader&quot;&gt;Find Your Perfect Workout&lt;/h1&gt;
+
+     &lt;!-- Фильтрация тренировок --&gt;
+     &lt;div class=&quot;row workout-filter&quot;&gt;
+       &lt;div class=&quot;col-md-4 level&quot;&gt;
+         &lt;label for=&quot;levelFilter&quot; class=&quot;form-label&quot;&gt;Level&lt;/label&gt;
+         &lt;select v-model=&quot;filters.level&quot; class=&quot;form-select&quot; id=&quot;levelFilter&quot;&gt;
+           &lt;option disabled value=&quot;&quot;&gt;Choose level...&lt;/option&gt;
+           &lt;option value=&quot;beginner&quot;&gt;Beginner&lt;/option&gt;
+           &lt;option value=&quot;intermediate&quot;&gt;Intermediate&lt;/option&gt;
+           &lt;option value=&quot;advanced&quot;&gt;Advanced&lt;/option&gt;
+         &lt;/select&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;col-md-4 type&quot;&gt;
+         &lt;label for=&quot;typeFilter&quot; class=&quot;form-label&quot;&gt;Type&lt;/label&gt;
+         &lt;select v-model=&quot;filters.type&quot; class=&quot;form-select&quot; id=&quot;typeFilter&quot;&gt;
+           &lt;option disabled value=&quot;&quot;&gt;Choose type...&lt;/option&gt;
+           &lt;option value=&quot;cardio&quot;&gt;Cardio&lt;/option&gt;
+           &lt;option value=&quot;strength&quot;&gt;Strength&lt;/option&gt;
+         &lt;/select&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;col-md-4 duration&quot;&gt;
+         &lt;label for=&quot;durationFilter&quot; class=&quot;form-label&quot;&gt;Duration&lt;/label&gt;
+         &lt;select v-model=&quot;filters.duration&quot; class=&quot;form-select&quot; id=&quot;durationFilter&quot;&gt;
+           &lt;option disabled value=&quot;&quot;&gt;Choose duration...&lt;/option&gt;
+           &lt;option value=&quot;short&quot;&gt;Less than 30 mins&lt;/option&gt;
+           &lt;option value=&quot;medium&quot;&gt;30-60 mins&lt;/option&gt;
+           &lt;option value=&quot;long&quot;&gt;More than 60 mins&lt;/option&gt;
+         &lt;/select&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+
+     &lt;!-- Кнопка сброса фильтров --&gt;
+     &lt;div class=&quot;text-center&quot;&gt;
+       &lt;button @click=&quot;resetFilters&quot; class=&quot;btn btn-secondary mb-4&quot;&gt;Reset Filters&lt;/button&gt;
+     &lt;/div&gt;
+
+     &lt;h2 id=&quot;workoutResultsTitle&quot; class=&quot;visually-hidden&quot;&gt;Workout Search Results&lt;/h2&gt;
+
+     &lt;!-- Карточки тренировок --&gt;
+     &lt;section aria-labelledby=&quot;workoutResultsTitle&quot;&gt;
+       &lt;div class=&quot;row&quot;&gt;
+         &lt;div
+           v-for=&quot;(workout, index) in filteredWorkouts&quot;
+           :key=&quot;index&quot;
+           class=&quot;col-md-4&quot;
+         &gt;
+           &lt;div class=&quot;card&quot; role=&quot;region&quot; aria-labelledby=&quot;workout1Title&quot; aria-describedby=&quot;workout1Description&quot;&gt;
+             &lt;img src=&quot;../pictures/workout1.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;Workout Image&quot; /&gt;
+             &lt;div class=&quot;card-body&quot;&gt;
+               &lt;h5 class=&quot;card-title&quot;&gt;{{ workout.title }}&lt;/h5&gt;
+               &lt;p class=&quot;card-text&quot;&gt;{{ workout.description }}&lt;/p&gt;
+               &lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; {{ workout.type }} | &lt;strong&gt;Level:&lt;/strong&gt; {{ workout.level }} | &lt;strong&gt;Duration:&lt;/strong&gt; {{ workout.duration }}&lt;/p&gt;
+               &lt;router-link to=&quot;/workout&quot; class=&quot;btn btn-primary&quot; aria-label=&quot;Start Workout&quot;&gt;Start&lt;/router-link&gt;
+               &lt;div class=&quot;d-flex justify-content-center mt-2&quot;&gt;
+                 &lt;button @click=&quot;saveWorkout(workout)&quot; class=&quot;btn btn-primary save-button me-2&quot;&gt;Save Workout&lt;/button&gt;
+               &lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/section&gt;
+
+     &lt;!-- Всплывающее окно для сохранения тренировки --&gt;
+     &lt;div class=&quot;modal fade&quot; id=&quot;savedModal&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;savedModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+       &lt;div class=&quot;modal-dialog&quot;&gt;
+         &lt;div class=&quot;modal-content&quot;&gt;
+           &lt;div class=&quot;modal-header&quot;&gt;
+             &lt;h5 class=&quot;modal-title&quot; id=&quot;savedModalLabel&quot;&gt;Saved to Profile&lt;/h5&gt;
+             &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+           &lt;/div&gt;
+           &lt;div class=&quot;modal-body&quot;&gt;Your workout has been saved to your profile.&lt;/div&gt;
+           &lt;div class=&quot;modal-footer&quot;&gt;
+             &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+
+
+     &lt;div class=&quot;text-center mt-4&quot;&gt;
+   &lt;router-link to=&quot;/acc&quot; class=&quot;btn btn-secondary&quot;&gt;Back to Profile&lt;/router-link&gt;
+ &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+
+ &lt;script&gt;
+ import axios from 'axios';
+ import { TokenStore } from '@/stores/TokenStore.js';
+ export default {
+   data() {
+     return {
+       theme: 'light',
+       filters: {
+         level: '',
+         type: '',
+         duration: '',
+       },
+       workouts: [],
+       savedWorkouts: [],
+     };
+   },
+   computed: {
+     filteredWorkouts() {
+       return this.workouts.filter(workout =&gt; {
+         const workoutDurationInMinutes = this.convertDurationToMinutes(workout.duration);
+         return (
+           (!this.filters.level || workout.level === this.filters.level) &amp;&amp;
+           (!this.filters.type || workout.type === this.filters.type) &amp;&amp;
+           (!this.filters.duration ||
+             (this.filters.duration === 'short' &amp;&amp; workoutDurationInMinutes &lt; 30) ||
+             (this.filters.duration === 'medium' &amp;&amp; workoutDurationInMinutes &gt;= 30 &amp;&amp; workoutDurationInMinutes &lt;= 60) ||
+             (this.filters.duration === 'long' &amp;&amp; workoutDurationInMinutes &gt; 60))
+         );
+       });
+     },
+   },
+   methods: {
+     toggleTheme() {
+       this.theme = this.theme === 'light' ? 'dark' : 'light';
+       document.documentElement.classList.toggle('blue-theme', this.theme === 'dark');
+     },
+     getUserId() {
+     const userId = tokenStore.userId;
+   },
+   saveWorkout(workout) {
+     const tokenStore = TokenStore();
+     const userId = tokenStore.userId;
+     const workoutData = {
+       user: userId,
+       workout: workout.id,
+       scheduled_date: new Date().toISOString().split('T')[0]
+     };
+     axios.post('http://127.0.0.1:8000/app/workout-plans/create/', workoutData, {
+       headers: {
+         'Content-Type': 'application/json',
+          Authorization: `Bearer ${tokenStore.token}`,
+       }
+     })
+       .then(response =&gt; {
+         console.log('Workout saved:', response.data);
+         alert('Workout has been saved to your profile!');
+       })
+       .catch(error =&gt; {
+         console.error('Error saving workout:', error);
+         alert('Failed to save workout');
+       });
+   },
+     resetFilters() {
+       this.filters.level = '';
+       this.filters.type = '';
+       this.filters.duration = '';
+     },
+     async fetchWorkouts() {
+       try {
+         const response = await axios.get('http://127.0.0.1:8000/app/workouts/');
+         this.workouts = response.data;
+       } catch (error) {
+         console.error('Error fetching workouts:', error);
+       }
+     },
+     convertDurationToMinutes(duration) {
+       const [hours, minutes] = duration.split(':').map(Number);
+       return hours * 60 + minutes;
+     },
+   },
+   created() {
+     this.fetchWorkouts();
+   },
+ };
+ &lt;/script&gt;
+
+ &lt;style scoped&gt;
+ :root {
+     --background-color: #fbeaff;
+     --text-color: #333;
+     --card-background: #fff;
+     --heading-color: #6a0dad;
+     --button-background: #ff85c0;
+     --button-border: #ff85c0;
+ }
+ /* Альтернативная голубая тема */
+ .blue-theme {
+     --background-color: #e0f7fa;
+     --text-color: #333;
+     --card-background: #ffffff;
+     --heading-color: #00796b;
+     --button-background: #00acc1;
+     --button-border: #00acc1;
+ }
+ body {
+     background-color: var(--background-color);
+     color: var(--text-color);
+     margin: 0;
+     font-family: Arial, sans-serif;
+ }
+ .search-workouts {
+     padding: 20px;
+ }
+ .card {
+     margin-bottom: 20px;
+     background-color: var(--card-background);
+     border-radius: 15px;
+ }
+ .card-body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+ .save-button, .btn-primary {
+     width: 150px;
+ }
+ .d-flex {
+     display: flex;
+ }
+ .justify-content-center {
+     justify-content: center;
+ }
+ .mt-2 {
+     margin-top: 10px;
+ }
+ .workout-filter {
+     margin-bottom: 30px;
+ }
+ .form-select {
+     background-color: #f3e5f5;
+     color: var(--text-color);
+     border-radius: 10px;
+ }
+ .form-label {
+     color: var(--heading-color);
+ }
+ .btn-primary {
+     background-color: var(--button-background);
+     border-color: var(--button-border);
+     color: var(--text-color);
+ }
+ h1 {
+     color: var(--heading-color);
+ }
+ .navigation-buttons {
+     margin-top: 20px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .icon-button {
+     font-size: 2rem;
+     padding: 15px;
+     border: none;
+     background: none;
+     cursor: pointer;
+     transition: transform 0.3s ease;
+     color: #333;
+ }
+ .icon-button:hover {
+     transform: scale(1.1);
+     color: #000;
+ }
+ .theme-switcher i {
+     font-size: 30px;
+     cursor: pointer;
+ }
+ .btn-secondary {
+     background-color: #6c757d;
+     border-color: #6c757d;
+     color: #fff;
+ }
+ #savedModal .modal-content {
+     background-color: var(--card-background);
+     color: var(--text-color);
+ }
+ &lt;/style&gt;
+</code></pre>
+<h2 id="5">Интерфейс 5. Страница блога</h2>
+<p>На странице профиля реализуем посты, которые подгружаются с сервера. В карточке поста будут заголовок и текст, а также дата публикации. При нажатии read more - переход на страницу статьи. Также есть фильтрация - можно вывести посты за последнюю неделю. Реализовано модальное окно для добавления нового поста пользователем. 
+<img alt="Блог" src="../images/4-3.png" /></p>
+<pre><code class="language-html">&lt;template&gt;
+   &lt;div&gt;
+     &lt;!-- Кнопка добавления поста --&gt;
+     &lt;button
+       class=&quot;btn btn-primary add-post-btn&quot;
+       data-bs-toggle=&quot;modal&quot;
+       data-bs-target=&quot;#addPostModal&quot;
+       aria-label=&quot;Add Post&quot;
+     &gt;
+       Add Post
+     &lt;/button&gt;
+
+     &lt;!-- Модальное окно --&gt;
+     &lt;div
+       class=&quot;modal fade&quot;
+       id=&quot;addPostModal&quot;
+       tabindex=&quot;-1&quot;
+       aria-labelledby=&quot;addPostModalLabel&quot;
+       aria-hidden=&quot;true&quot;
+     &gt;
+       &lt;div class=&quot;modal-dialog&quot;&gt;
+         &lt;div class=&quot;modal-content&quot;&gt;
+           &lt;div class=&quot;modal-header&quot;&gt;
+             &lt;h5 class=&quot;modal-title&quot; id=&quot;addPostModalLabel&quot;&gt;Add New Post&lt;/h5&gt;
+             &lt;button
+               type=&quot;button&quot;
+               class=&quot;btn-close&quot;
+               data-bs-dismiss=&quot;modal&quot;
+               aria-label=&quot;Close&quot;
+             &gt;&lt;/button&gt;
+           &lt;/div&gt;
+           &lt;div class=&quot;modal-body&quot;&gt;
+             &lt;form @submit.prevent=&quot;submitPost&quot;&gt;
+               &lt;div class=&quot;mb-3&quot;&gt;
+                 &lt;label for=&quot;title&quot; class=&quot;form-label&quot;&gt;Title&lt;/label&gt;
+                 &lt;input
+                   type=&quot;text&quot;
+                   id=&quot;title&quot;
+                   v-model=&quot;newPost.title&quot;
+                   required
+                   class=&quot;form-control&quot;
+                 /&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;mb-3&quot;&gt;
+                 &lt;label for=&quot;content&quot; class=&quot;form-label&quot;&gt;Content&lt;/label&gt;
+                 &lt;textarea
+                   id=&quot;content&quot;
+                   v-model=&quot;newPost.content&quot;
+                   required
+                   class=&quot;form-control&quot;
+                 &gt;&lt;/textarea&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;modal-footer&quot;&gt;
+                 &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+                 &lt;button
+                   type=&quot;button&quot;
+                   class=&quot;btn btn-secondary&quot;
+                   data-bs-dismiss=&quot;modal&quot;
+                 &gt;
+                   Cancel
+                 &lt;/button&gt;
+               &lt;/div&gt;
+             &lt;/form&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+
+     &lt;!-- Фильтры --&gt;
+     &lt;div class=&quot;text-center mb-4&quot;&gt;
+       &lt;button class=&quot;btn btn-primary btn-info me-2&quot; @click=&quot;fetchRecentPosts&quot;&gt;
+         Show Recent Posts
+       &lt;/button&gt;
+       &lt;button class=&quot;btn btn-primary&quot; @click=&quot;resetFilter&quot;&gt;
+         Show All Posts
+       &lt;/button&gt;
+     &lt;/div&gt;
+
+     &lt;!-- Список блогов --&gt;
+     &lt;div class=&quot;container blog-container&quot; role=&quot;main&quot;&gt;
+       &lt;h1 class=&quot;text-center mb-4&quot;&gt;Health and Nutrition Blog&lt;/h1&gt;
+
+       &lt;div class=&quot;row&quot; role=&quot;list&quot;&gt;
+         &lt;!-- Карточки статей --&gt;
+         &lt;BlogCard
+           v-for=&quot;(post, index) in posts&quot;
+           :key=&quot;post.id&quot;
+           :post=&quot;post&quot;
+           @readMore=&quot;goToPost&quot;
+         /&gt;
+       &lt;/div&gt;
+
+       &lt;div class=&quot;text-center mt-4&quot;&gt;
+         &lt;router-link
+           to=&quot;/acc&quot;
+           class=&quot;btn btn-secondary&quot;
+           aria-label=&quot;Back to profile page&quot;
+         &gt;
+           Back to Profile
+         &lt;/router-link&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+
+ &lt;script&gt;
+ import BlogCard from &quot;../components/Blog/BlogCard.vue&quot;;
+ import axios from &quot;axios&quot;;
+ import { TokenStore } from &quot;@/stores/TokenStore.js&quot;;
+ export default {
+   name: &quot;Blog&quot;,
+   components: { BlogCard },
+   data() {
+     return {
+       posts: [],
+       allPosts: [],
+       newPost: {
+         title: &quot;&quot;,
+         content: &quot;&quot;,
+       },
+     };
+   },
+   methods: {
+     async fetchPosts() {
+       try {
+         const response = await axios.get(&quot;http://127.0.0.1:8000/app/blogposts/&quot;);
+         this.posts = response.data;
+         this.allPosts = response.data;
+       } catch (error) {
+         console.error(&quot;Error fetching posts:&quot;, error);
+       }
+     },
+     async fetchRecentPosts() {
+       try {
+         const response = await axios.get(
+           &quot;http://127.0.0.1:8000/app/recent-blogs/&quot;
+         );
+         this.posts = response.data;
+       } catch (error) {
+         console.error(&quot;Error fetching recent posts:&quot;, error);
+       }
+     },
+     resetFilter() {
+       this.posts = [...this.allPosts];
+     },
+     async submitPost() {
+       const tokenStore = TokenStore();
+       const postData = {
+         ...this.newPost,
+         author: tokenStore.userId,
+       };
+       try {
+         const response = await axios.post(
+           &quot;http://127.0.0.1:8000/app/blogposts/create/&quot;,
+           postData,
+           {
+             headers: {
+               &quot;Content-Type&quot;: &quot;application/json&quot;,
+               Authorization: `Bearer ${tokenStore.token}`,
+             },
+           }
+         );
+         this.posts.unshift(response.data);
+         this.allPosts.unshift(response.data);
+         alert(&quot;Post added successfully!&quot;);
+         const modalElement = document.getElementById(&quot;addPostModal&quot;);
+         const modalInstance = bootstrap.Modal.getInstance(modalElement);
+         setTimeout(() =&gt; {
+           modalInstance.hide();
+         }, 3000);
+         this.newPost = {
+           title: &quot;&quot;,
+           content: &quot;&quot;,
+         };
+       } catch (error) {
+       }
+     },
+     goToPost(postId) {
+       this.$router.push(`/post/`);
+     },
+   },
+   mounted() {
+     this.fetchPosts();
+   },
+ };
+ &lt;/script&gt;
+
+ &lt;style scoped&gt;
+ :root {
+     --background-color: #fbeaff;
+     --text-color: #333;
+     --card-background: #fff;
+     --heading-color: #6a0dad;
+     --button-background: #ff85c0;
+     --button-border: #ff85c0;
+ }
+ .blue-theme {
+     --background-color: #e0f7fa;
+     --text-color: #333;
+     --card-background: #ffffff;
+     --heading-color: #00796b;
+     --button-background: #00acc1;
+     --button-border: #00acc1;
+     --modal-background: rgba(0, 0, 0, 0.5);
+ }
+ body {
+     background-color: var(--background-color);
+     color: var(--text-color);
+     margin: 0;
+     font-family: Arial, sans-serif;
+ }
+ .blog-container {
+     padding: 20px;
+ }
+ .modal-content {
+     background-color: #fff;
+     border-radius: 15px;
+     color: #000;
+ }
+ .modal-header,
+ .modal-footer {
+     background-color: #f8f9fa;
+ }
+ .modal-backdrop {
+     background-color: rgba(0, 0, 0, 0.5);
+ }
+ .modal-body form input, .modal-body form textarea {
+     border: 1px solid #ddd;
+     padding: 10px;
+     width: 100%;
+     border-radius: 5px;
+ }
+ .add-post-btn {
+     position: fixed;
+     top: 10px;
+     left: 60px;
+     z-index: 1000;
+ }
+ h1, .card-title {
+     color: var(--heading-color);
+ }
+ .card-article {
+     background-color: var(--card-background);
+     border-radius: 15px;
+     margin-bottom: 20px;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ .btn-primary {
+     background-color: var(--button-background);
+     border-color: var(--button-border);
+     color: var(--text-color);
+ }
+ .btn-secondary {
+     background-color: #6c757d;
+     border-color: #6c757d;
+     color: #fff;
+ }
+ .theme-switcher {
+     position: fixed;
+     top: 10px;
+     left: 10px;
+     z-index: 1000;
+     cursor: pointer;
+ }
+ .theme-switcher i {
+     font-size: 2rem;
+     color: #000;
+     transition: color 0.3s ease;
+ }
+ .theme-switcher:hover i {
+     color: #00796b;
+ }
+ .blog-container {
+     margin-top: 20px;
+ }
+ .text-center {
+     text-align: center;
+ }
+ .text-center button, .text-center a {
+     margin: 10px 0;
+ }
+ @media (max-width: 768px) {
+     .add-post-btn {
+         left: 10px;
+         top: 60px;
+     }
+     .modal-dialog {
+         width: 100%;
+         margin: 0;
+     }
+     .container.blog-container {
+         padding: 10px;
+     }
+ }
+ &lt;/style&gt;
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6f25eb3.min.js"></script>
+      
+    
+  </body>
+</html>

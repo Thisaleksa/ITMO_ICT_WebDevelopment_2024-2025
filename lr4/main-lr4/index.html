@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../../lr3/main-lr3/">
+      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>Страница комментариев пользователя - Web-Prog - Docs</title>
+        <title>Лабораторная работа 4 - Web-Prog - Docs</title>
       
     
     
@@ -66,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#4-vuejs" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Страница комментариев пользователя
+              Лабораторная работа 4
             
           </span>
         </div>
@@ -235,7 +237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../main-lr2/" class="md-nav__link">
+      <a href="../../lr2/main-lr2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -272,10 +274,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../lr4/main-lr4/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 4
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -284,6 +306,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Структура лабораторной работы:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -315,27 +366,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Модель комментария
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Представление комментариев
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#html-" class="md-nav__link">
-    <span class="md-ellipsis">
-      HTML-страница комментариев к гонке
+      Структура лабораторной работы:
     </span>
   </a>
   
@@ -356,158 +389,17 @@
                   
 
 
-<h1 id="_1">Страница комментариев пользователя</h1>
-<p>На этой странице пользователь может увидеть все комментарии, оставленные к гонке, включая собственный. </p>
-<h2 id="_2">Модель комментария</h2>
-<p>При добавлении комментариев сохраняются даты заезда, текст комментария, тип комментария (вопрос о сотрудничестве, вопрос о гонках, иное), рейтинг (1-10), информация о комментаторе.</p>
-<pre><code class="language-python">class Comment(models.Model):
-    COMMENT_TYPE_CHOICES = [
-        ('cooperation', 'Вопрос о сотрудничестве'),
-        ('race', 'Вопрос о гонках'),
-        ('other', 'Иное')
-    ]
-    race = models.ForeignKey(Race, on_delete=models.CASCADE)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    text = models.TextField()
-    comment_type = models.CharField(max_length=50, choices=COMMENT_TYPE_CHOICES)
-    rating = models.IntegerField()
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return f&quot;Комментарий от {self.user} к гонке {self.race} ({self.get_comment_type_display()})&quot;
-</code></pre>
-<h2 id="_3">Представление комментариев</h2>
-<p><strong>add_comment</strong>: Позволяет пользователю добавлять комментарии к конкретной гонке. Если запрос поступает методом POST, функция проверяет корректность данных из формы. В случае успеха она создает новый комментарий, связывает его с гонкой и текущим пользователем, после чего сохраняет его и перенаправляет на страницу комментариев гонки. Если запрос не POST, отображается пустая форма для добавления комментария.</p>
-<p><strong>race_comments</strong>: Отображает все комментарии, связанные с конкретной гонкой. </p>
-<pre><code class="language-python">def add_comment(request, race_id):
-    race = get_object_or_404(Race, id=race_id)
-
-    if request.method == &quot;POST&quot;:
-        form = CommentForm(request.POST)
-        if form.is_valid():
-            comment = form.save(commit=False)
-            comment.race = race
-            comment.user = request.user
-            comment.save()
-            return redirect('race_comments', race_id=race.id)
-    else:
-        form = CommentForm()
-
-    return render(request, 'add_comment.html', {'form': form, 'race': race})
-
-
-@login_required
-def race_comments(request, race_id):
-    race = get_object_or_404(Race, id=race_id)
-    comments = Comment.objects.filter(race=race)
-    return render(request, 'race_comments.html', {'race': race, 'comments': comments})
-</code></pre>
-<h2 id="html-">HTML-страница комментариев к гонке</h2>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Комментарии к гонке&lt;/title&gt;
-    &lt;style&gt;
-        body {
-            background-color: #333;
-            font-family: Arial, sans-serif;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-image: radial-gradient(circle, #333 20%, #222 80%);
-        }
-
-        .dashboard-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            width: 90%;
-            max-width: 1200px;
-        }
-
-        .card {
-            background-color: #222;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-            border: 2px solid #e10600;
-            text-align: center;
-        }
-
-        .card h3 {
-            color: #e10600;
-            margin: 15px 0;
-            font-size: 1.5em;
-            text-transform: uppercase;
-        }
-
-        .card-content {
-            margin-top: 10px;
-        }
-
-        .race-item {
-            background-color: #333;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #444;
-        }
-
-        .race-item p {
-            margin: 5px 0;
-        }
-
-        .race-item strong {
-            color: #e10600;
-        }
-
-        .race-item a {
-            color: #e10600;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .race-item a:hover {
-            color: #ff1e00;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-    &lt;div class=&quot;dashboard-container&quot;&gt;
-        &lt;div class=&quot;card&quot;&gt;
-            &lt;h3&gt;Комментарии к гонке&lt;/h3&gt;
-            &lt;div class=&quot;card-content&quot;&gt;
-                &lt;p&gt;Дата гонки: {{ race.date }} {{ race.start_time }}&lt;/p&gt;
-                {% if comments %}
-                    &lt;ul&gt;
-                        {% for comment in comments %}
-                            &lt;li class=&quot;race-item&quot;&gt;
-                                &lt;p&gt;&lt;strong&gt;Комментатор:&lt;/strong&gt; {{ comment.user.username }}&lt;/p&gt;
-                                &lt;p&gt;&lt;strong&gt;Тип комментария:&lt;/strong&gt; {{ comment.get_comment_type_display }}&lt;/p&gt;
-                                &lt;p&gt;&lt;strong&gt;Рейтинг:&lt;/strong&gt; {{ comment.rating }}&lt;/p&gt;
-                                &lt;p&gt;&lt;strong&gt;Комментарий:&lt;/strong&gt; {{ comment.text }}&lt;/p&gt;
-                                &lt;p&gt;&lt;strong&gt;Дата добавления:&lt;/strong&gt; {{ comment.date_created }}&lt;/p&gt;
-                            &lt;/li&gt;
-                        {% endfor %}
-                    &lt;/ul&gt;
-                {% else %}
-                    &lt;p&gt;Комментариев пока нет.&lt;/p&gt;
-                {% endif %}
-                &lt;a href=&quot;{% url 'add_comment' race.id %}&quot;&gt;Добавить комментарий&lt;/a&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<h1 id="4-vuejs">Лабораторная работа 4 - Реализация клиентской части средствами Vue.js.</h1>
+<h2 id="_1">Структура лабораторной работы:</h2>
+<p><strong>Вариант</strong> - <strong>Платформа для фитнес тренировок и здоровья</strong> </p>
+<ul>
+<li>
+<p><a href="../interfaces/">Интерфейсы</a></p>
+</li>
+<li>
+<p><a href="../components/">Компоненты</a></p>
+</li>
+</ul>
 
 
 
